@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotoAI — Augmented
+    Reality for Motorsport</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+
+
+    .box {	width:100%; margin: auto; display: flex; flex-wrap: wrap; align-items: center; }
+    .dark { background-color:#000000; color: white; }
+    .clientcontainer { display: flex; flex-wrap: wrap; width: 100%; margin: auto }
+    .clientbox { width: 25%; padding-bottom:50px; display:flex; align-items: center; justify-content: center; min-height: 150px }
+
+  </style>
+</head>
+
+<body class="bg-white font-sans">
+
+  <nav class="bg-black px-9 py-4 flex justify-between">
+    <div class="text-gray-500"><a href="index.html" class="hover:text-white">TLD Vision</a></div>
+    <ul class="flex space-x-6 text-gray-500">
+      <li><a href="tld2.html" class="hover:text-white">TLD2</a></li>
+      <li><a href="motoai.html" class="hover:text-white">MotoAI</a></li>
+
+    </ul>
+  </nav>
+
+
+  <main class="px-8 space-y-8">
+
+    <!-- MOTOAI -->
+
+    <section class="py-16">
+      <h1 class="text-6xl md:text-9xl  text-gray-800">TLD2.2</h1>
+      <p class="text-2xl mt-2 text-gray-400">
+        TLD2.2 is a C++ library for 2D tracking and online learning of generic objects. It is most appropriate for real-time applications with limited compute power that wish to track all kids of objects and ensure re-detection capabilities. TLD2 is a system which includes tracking, on-line learning and detection in a single real-time process. Considering these components all at once is what makes this technology unique.
+      </p>
+    </section>
+
+    <section class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <h2 class="text-4xl mb-4 text-gray-800">Initialization</h2>
+        <p class="text-xl text-gray-400">
+          Tracking is initialized by a single bounding box. Given this bounding box, TLD immediately learns the initial target model.
+        </p>
+      </div>
+
+      <div class="flex-1 w-full aspect-video"> 
+        <img class="w-full h-full object-cover rounded" src="imgs/tld2/init.jpg" alt="Full Grid Augmentation" />
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <h2 class="text-4xl mb-4 text-gray-800">Tracking</h2>
+        <p class="text-xl text-gray-400">The object is then tracked using frame-to-frame tracker as long as it is visible. The tracker reports the object state using a bounding box which defines the location and scale in the image coordinates. During tracking the model is continuously updated with new information about the target.</p>
+      </div>
+      <div class="flex-1 w-full aspect-video"> 
+        <img class="w-full h-full object-cover rounded" src="imgs/tld2/tracking.jpg" alt="Live Labels & Insights"  /> 
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <h2 class="text-4xl mb-4 text-gray-800">Detection</h2>
+        <p class="text-xl text-gray-400">
+          In the event that the target becomes fully occluded or dispersals from the field of view, TLD uses the online learned model and re-detects the target once it becomes visible again. Tracking can thus continue without any interruption much longer than conventional trackers.
+        </p>
+      </div>
+      <div class="flex-1 w-full aspect-video"> 
+        <img class="w-full h-full object-cover rounded" src="imgs/tld2/detection.jpg"  alt="Laser-Focused Storytelling" /> 
+      </div>
+    </section>
+
+    <!-- <section class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <h2 class="text-4xl mb-4 text-gray-800">Correction</h2>
+        <p class="text-xl text-gray-400">
+          In case the tracker drifts, or the object reappears with significantly different appearance after occlusion, TLD allows trajectory correction. The operator provides additional bounding box and this information is smoothly integrated into the target model. This feature provides improved tracking stability.
+        </p>
+      </div>
+      <div class="flex-1 w-full aspect-video"> 
+        <img class="w-full h-full object-cover rounded" src="imgs/tld2/correction.jpg"  alt="Laser-Focused Storytelling" /> 
+      </div>
+    </section>  -->
+
+        <section class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="flex-1">
+        <h2 class="text-4xl mb-4 text-gray-800">
+        Multiple Targets</h2>
+        <p class="text-xl text-gray-400">
+          Multiple targets are tracked and learned simultaneously. These can be saved for later use and loaded to memory once they become relevant again. In this case the target is re-initialized automatically using the previously saved model.
+        </p>
+      </div>
+      <div class="flex-1 w-full aspect-video"> 
+        <img class="w-full h-full object-cover rounded" src="imgs/tld2/multiple.jpg"  alt="Laser-Focused Storytelling" /> 
+      </div>
+    </section>
+
+  
+    <section class="py-16">
+      <h1 class="text-6xl md:text-6xl  text-gray-800">Clients</h1>
+    </section>
+
+    <section>
+        <div class="box dark">
+            <div class="clientcontainer">
+
+                <div class="clientbox"><a href="http://www.omron.com/" target="_blank"><img src="imgs/clients/omron2.png"></a></div>
+                <div class="clientbox"><a href="http://www.tencent.com/en-us/index.html" target="_blank"><img src="imgs/clients/tencent2.png"></a></div>
+                <div class="clientbox"><a href="http://home.jnjt.co.kr/" target="_blank"><img src="imgs/clients/j&j_tech2.png"></a></div>
+                <div class="clientbox"><a href="http://en.ritsumei.ac.jp/" target="_blank"><img src="imgs/clients/ritsumeikan_uni2.png"></a></div>
+                <div class="clientbox"><a href="http://www.visy.fi/" target="_blank"><img src="imgs/clients/visy2.png"></a></div>
+                <div class="clientbox"><a href="https://ai.uni-bremen.de/" target="_blank"><img src="imgs/clients/npo.png"></a></div>
+                <div class="clientbox"><a href="http://wb.com.pl/" target="_blank"><img src="imgs/clients/wb2.png"></a></div>
+                <div class="clientbox"><a href="http://blog.stageme.com/" target="_blank"><img src="imgs/clients/stageme2.png"></a></div>
+                <div class="clientbox"><a href="http://quetel.com/" target="_blank"><img src="imgs/clients/quetel2.png"></a></div>
+                <div class="clientbox"><a href="https://ai.uni-bremen.de/" target="_blank"><img src="imgs/clients/bremen2.png"></a></div>
+                <div class="clientbox"><a href="http://www.nice.com/" target="_blank"><img src="imgs/clients/nice.png"></a></div>
+                <div class="clientbox"><a href="http://www.cm.snu.ac.kr/homeeng" target="_blank"><img src="imgs/clients/seoul_national_uni.png"></a></div>
+                <div class="clientbox"><a href="http://labwe.com/" target="_blank"><img src="imgs/clients/labotrix2.png"></a></div>
+                <div class="clientbox"><a href="http://www.fletch.com/" target="_blank"><img src="imgs/clients/fletcher_group2.png"></a></div>
+                <div class="clientbox"><a href="http://www.jdsol.co.kr/eng/" target="_blank"><img src="imgs/clients/jd_solution.png"></a></div>
+                <div class="clientbox"><a href="http://eyedea.co.kr/" target="_blank"><img src="imgs/clients/eyedea2.png"></a></div>
+                <div class="clientbox"><a href="http://www.uavos.com/" target="_blank"><img src="imgs/clients/uavos2.png"></a></div>
+                <div class="clientbox"><a href="http://www.mrmoco.com/" target="_blank"><img src="imgs/clients/mrmc2.png"></a></div>
+                <div class="clientbox"><a href="http://www.veepio.com/" target="_blank"><img src="imgs/clients/veepio2.png"></a></div>
+                <div class="clientbox"><a href="http://www.csp-sw.de/en/" target="_blank"><img src="imgs/clients/csp2.png"></a></div>
+                <div class="clientbox"><a href="https://www.stottlerhenke.com/"><img src="imgs/clients/stottler_henke2.png"></a></div>
+                <div class="clientbox"><a href="http://www.tsukuba.ac.jp/english/" target="_blank"><img src="imgs/clients/tsukuba_uni.png"></a></div>
+                <div class="clientbox"><a href="http://www.sr7.eu/idiomas/ing/index.php"><img src="imgs/clients/sr72.png"></a></div>
+                <div class="clientbox"><a href="http://www.wanin.net/" target="_blank"><img src="imgs/clients/wanin.png"></a></div>
+                <div class="clientbox"><a href="http://www.photron.com/" target="_blank"><img src="imgs/clients/photron2.png"></a></div>
+                <div class="clientbox"><a href="http://www.vt.edu/" target="_blank"><img src="imgs/clients/virginia_tech.png"></a></div>
+                <div class="clientbox"><a href="http://www.movcam.com/en/" target="_blank"><img src="imgs/clients/movcam.png"></a></div>
+                <div class="clientbox"><a href="http://www.indracompany.com/en" target="_blank"><img src="imgs/clients/indra2.png"></a></div>
+                <div class="clientbox"><a href="http://www.cladoop.com/site/" target="_blank"><img src="imgs/clients/cladoop2.png"></a></div>
+                <div class="clientbox"><a href="http://magnetsystems.net/" target="_blank"><img src="imgs/clients/magnet2.png"></a></div>
+                <div class="clientbox"><a href="https://research.bournemouth.ac.uk/centre/software-systems-research-centre/" target="_blank"><img src="imgs/clients/bournemouth_uni.png"></a></div>
+
+            </div>
+        </div>
+        <footer></footer>
+    </section> 
+
+
+  
+
+
+  </main>
+
+  <footer class="text-xl py-12 px-9 border-gray-700 text-sm text-gray-500">
+    &copy; 2025 TLD Vision</footer>
+</body>
+
+</html>
