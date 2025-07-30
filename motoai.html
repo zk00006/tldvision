@@ -20,7 +20,7 @@
   </nav>
 
 
-  <main class="px-8 space-y-8">
+  <main class="px-8 space-y-8 max-w-6xl mx-auto"> 
 
     <!-- MOTOAI -->
 
@@ -35,7 +35,7 @@
       <div class="flex-1">
         <h2 class="text-4xl mb-4 text-gray-800">Introduce the drivers</h2>
         <p class="text-xl text-gray-400">
-          Augment the full grid at the race start. Help the viewers to find their fivorite drivers. Visualize which brands are competing. Set the stage for what will come next.
+          Augment the full grid at the race start. Help the viewers to find their favorite drivers. Visualize which brands are competing. Set the stage for what will come next.
         </p>
       </div>
 
@@ -95,7 +95,7 @@
         </p>
       </div>
       <div class="flex-1 w-full aspect-video"> 
-        <img class="w-full h-full object-cover rounded" src="imgs/uses/Picture5.jpg" alt="Live Racing Lines" " />
+        <img class="w-full h-full object-cover rounded" src="imgs/uses/Picture5.jpg" alt="Live Racing Lines" />
       </div>
     </section>
 
@@ -126,6 +126,8 @@
        <!-- TECHNOLOGY -->
 
 
+
+
     <section class="py-16">
       <h1 class="text-6xl md:text-9xl text-gray-800">Technology</h1>
       <p class="text-2xl mt-2 text-gray-400">
@@ -133,11 +135,34 @@
       </p>
     </section>
 
+
+<section class="flex flex-col md:flex-row gap-8 items-start">
+  <div class="md:flex-1">
+    <h2 class="text-4xl mb-4 text-gray-800">4D Model</h2>
+    <p class="text-lg text-gray-400"> 
+      MotoAI represents the race as a 4D model, where 3D objects move over 1D time.
+      We integrate multiple data sources (video, GPS, telemetry), and fuse them into a single, coherent representation. This internal model powers both augmented reality graphics and high-level race analysis. The video on the left showcases this representation.
+    </p>
+  </div>
+
+  <div class="w-full md:flex-1">
+    <div class="relative w-full" style="padding-top: 56.25%; min-height: 200px;">
+      <iframe class="absolute top-0 left-0 w-full h-full rounded"
+              src="https://www.youtube.com/embed/bdDUg-CHqAM?rel=0"
+              title="MotoAI Analysis"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
     <section class="flex flex-col md:flex-row gap-8 items-start">
       <div class="flex-1">
         <h2 class="text-4xl mb-4 text-gray-800">Hardware</h2>
         <p class="text-lg text-gray-400"> 
-          MotoAI runs on a single gaming laptop. But if you have proffessional equipment, great. The more power you throw at MotoAI, the better it works. You will also need SDI I/O card to get video signal in and out. 
+          MotoAI runs on a single gaming laptop. But if you have professional equipment, great. The more power you throw at MotoAI, the better it works. You will also need SDI I/O card to get video signal in and out. 
         </p>
       </div>
       <div class="flex-1 w-full aspect-video"> 
@@ -172,11 +197,13 @@
 
     <section class="flex flex-col md:flex-row gap-8 items-start">
       <div class="flex-1">
-        <h2 class="text-4xl mb-4 text-gray-800">Live
-          telemetry</h2>
+        <h2 class="text-4xl mb-4 text-gray-800">Timing & Telemetry</h2>
         <p class="text-lg text-gray-400"> 
-          Visualizing live speed or race position requires a connection to timing and telemetry data. For smaller series, this data may not be available, and for larger series, access interfaces often vary. That's why we offer live telemetry as an optional feature for higher-level subscriptions.
+          Visualizing live speed or race position requires a connection to timing and telemetry data. This connection is optional for higher-level subscriptions.
         </p>
+      </div>
+       <div class="flex-1 w-full aspect-video">
+         <img class="w-full h-full object-cover rounded"src="imgs/telemetry.png" alt="Timing screen" />
       </div>
     </section>
 
@@ -185,7 +212,6 @@
       <p class="text-2xl mt-2 text-gray-400"> 
         Our pricing depends on several factors, including the number of cars in the race, race length, connection to external telemetry. We also consider difficulty to realize the AI. 
       </p>
-      <p class="text-2xl mt-2 text-gray-400"></p>
     </section>
 
     <section>
@@ -220,6 +246,7 @@
             <li>Max 75 cars</li>
             <li>Graphics output</li>
             <li>Live telemetry</li>
+            <li>3D analysis</li>
           </ul>
         </div>
 
